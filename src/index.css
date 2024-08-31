@@ -1,0 +1,114 @@
+/** @format */
+
+body, html {
+    scroll-behavior: smooth;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* modal */
+* {
+	font-family: 'Times New Roman', Times, serif;
+}
+body.active-modal {
+    overflow-y: hidden;
+}
+
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.712);
+	backdrop-filter: blur(8px);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 10px;
+    max-width: 100%;
+    min-width: 350px;
+}
+
+#mad{
+    background:rgba(0, 0, 0, 0);
+}
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+
+
+#banner {
+	background-image: url(./assets/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 800px;
+	object-fit: contain;
+}
+#banner:before {
+	content: '';
+	background: rgba(0, 0, 0, 0.562);
+	height: 800px;
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+	object-fit: contain;
+	
+}
+.active {
+	color: #086cf9;
+}
+#vid {
+    opacity: 0;
+	overflow: hidden;
+}
+#pupleimg:hover > #vid  {
+    scale: 1.1;
+	transition: 0.3s all;
+    opacity: 1;
+	background: rgba(255, 255, 255, 0.562);
+}
+#pupleimg:hover  {
+	transition: 0.3s all;
+    scale: 1.05;
+}
+
+#data{
+    background-image: url();
+}
+#card{
+    overflow: hidden;
+}
+#card:hover > img{
+    scale: 1.01;
+    transition: 0.4s all;
+}
+#box{
+    overflow: hidden;
+  }
+#box:hover > #butn{
+    scale: 1.1;
+  }

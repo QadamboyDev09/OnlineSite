@@ -1,0 +1,17 @@
+
+@media  screen and (max-width: 426px) {
+    #name{
+      font-size: 23px;
+    }
+    #bannerr{
+        position: relative;
+        left: 3px;
+    }
+    #menu{
+     width: 90px;
+
+    }
+  }
+  @media  screen and (max-width: 775px) {
+
+  }
